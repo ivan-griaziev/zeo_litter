@@ -159,9 +159,15 @@ body {
 .adw_img {
   width: 40%;
   margin: 0 10px;
-  border-radius: 56px;
+  border-radius: 156px;
   box-shadow: 0 10px 30px rgba(17, 17, 17, 0.08)
 }
+
+.adw_img_arrow {
+  position: absolute;
+  bottom: 10px;
+}
+
 
 /* Responsive tweaks to approach pixel-perfect at common breakpoints */
 @media(min-width:992px) {
