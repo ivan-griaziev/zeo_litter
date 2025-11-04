@@ -300,3 +300,24 @@ body {
   border-radius: 306px;
   border: 2px dotted #fff;
 }
+
+.swiper {
+  width: 100%;
+  min-height: 300px;
+}
+
+.swiper-slide {
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

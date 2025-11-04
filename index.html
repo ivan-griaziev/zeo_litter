@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&display=swap"
         rel="stylesheet">
     <!-- Custom styles for ZEOLINO -->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
     <link rel="stylesheet" href="assets/css/zeolino.css">
 </head>
 
@@ -155,41 +156,73 @@
                     </h2>
 
 
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div
-                                class="testimonial-slide p-4 rounded-16 h-100 d-flex flex-column justify-content-center">
-                                <div class="testimonial-quote mb-3">
-                                    <p>"Die Umweltfreundlichkeit von Zeolino ist für mich ein großer Pluspunkt. Ich
-                                        fühle mich
-                                        gut,
-                                        wenn ich es benutze."</p>
+
+
+                    <!-- Swiper -->
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="d-flex justify-content-between mb-3">
+                                    <img src="./assets/img/quotes.svg" class=""
+                                        alt="Stylized gray double quotation marks indicating a testimonial; two rounded opening-quote shapes side by side, used to emphasize a customer quote in a clean minimal layout; no readable text in the graphic; neutral supportive tone conveying endorsement">
                                 </div>
-                                <div class="testimonial-author mt-auto">
-                                    <strong>Sophia M.</strong><br>
-                                    Katzenbesitzerin aus Hamburg
-                                </div>
+                                <p>Endlich kein Geruch mehr! Unsere Katze liebt es.</p>
+                                <p class="fw-bold pt-3"><i>– Petra, Berlin</i></p>
                             </div>
-                            <div class="col-md-6">
-                                <div
-                                    class="testimonial-slide p-4 rounded-16 h-100 d-flex flex-column justify-content-center">
-                                    <div class="testimonial-quote mb-3">
-                                        <p>"Die Umweltfreundlichkeit von Zeolino ist für mich ein großer Pluspunkt. Ich
-                                            fühle mich
-                                            gut,
-                                            wenn ich es benutze."</p>
-                                    </div>
-                                    <div class="testimonial-author mt-auto">
-                                        <strong>Sophia M.</strong><br>
-                                        Katzenbesitzerin aus Hamburg
-                                    </div>
+                            <div class="swiper-slide">
+                                <div class="d-flex justify-content-between mb-3">
+                                    <img src="./assets/img/quotes.svg" class=""
+                                        alt="Stylized gray double quotation marks indicating a testimonial; two rounded opening-quote shapes side by side, used to emphasize a customer quote in a clean minimal layout; no readable text in the graphic; neutral supportive tone conveying endorsement">
                                 </div>
+                                <p>Endlich kein Geruch mehr! Unsere Katze liebt es.</p>
+                                <p class="fw-bold pt-3"><i>– Petra, Berlin</i></p>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="d-flex justify-content-between mb-3">
+                                    <img src="./assets/img/quotes.svg" class=""
+                                        alt="Stylized gray double quotation marks indicating a testimonial; two rounded opening-quote shapes side by side, used to emphasize a customer quote in a clean minimal layout; no readable text in the graphic; neutral supportive tone conveying endorsement">
+                                </div>
+                                <p>Endlich kein Geruch mehr! Unsere Katze liebt es.</p>
+                                <p class="fw-bold pt-3"><i>– Petra, Berlin</i></p>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="d-flex justify-content-between mb-3">
+                                    <img src="./assets/img/quotes.svg" class=""
+                                        alt="Stylized gray double quotation marks indicating a testimonial; two rounded opening-quote shapes side by side, used to emphasize a customer quote in a clean minimal layout; no readable text in the graphic; neutral supportive tone conveying endorsement">
+                                </div>
+                                <p>Endlich kein Geruch mehr! Unsere Katze liebt es.</p>
+                                <p class="fw-bold pt-3"><i>– Petra, Berlin</i></p>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="d-flex justify-content-between mb-3">
+                                    <img src="./assets/img/quotes.svg" class=""
+                                        alt="Stylized gray double quotation marks indicating a testimonial; two rounded opening-quote shapes side by side, used to emphasize a customer quote in a clean minimal layout; no readable text in the graphic; neutral supportive tone conveying endorsement">
+                                </div>
+                                <p>Endlich kein Geruch mehr! Unsere Katze liebt es.</p>
+                                <p class="fw-bold pt-3"><i>– Petra, Berlin</i></p>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="d-flex justify-content-between mb-3">
+                                    <img src="./assets/img/quotes.svg" class=""
+                                        alt="Stylized gray double quotation marks indicating a testimonial; two rounded opening-quote shapes side by side, used to emphasize a customer quote in a clean minimal layout; no readable text in the graphic; neutral supportive tone conveying endorsement">
+                                </div>
+                                <p>Endlich kein Geruch mehr! Unsere Katze liebt es.</p>
+                                <p class="fw-bold pt-3"><i>– Petra, Berlin</i></p>
                             </div>
                         </div>
+                        <div class="swiper-pagination"></div>
                     </div>
+
+
+
                 </div>
                 <div class="col-lg-4">
-                    <img src="./assets/img/about_bg.jpg" class="testimonial-img" alt="">
+                    <img src="./assets/img/testimonials_img.jpg" class="testimonial-img"
+                        alt="A man and a black-and-white cat touch noses as the man gently cradles the cat and the cat raises a paw to his face, indoor living space with a soft rug and wooden chair legs visible in warm natural light, no visible text, warm affectionate and tender mood">
                 </div>
             </div>
         </div>
@@ -334,7 +367,23 @@
             }
         });
     </script>
+
+
     <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 2,
+            spaceBetween: 40,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
 </body>
 
 </html>
