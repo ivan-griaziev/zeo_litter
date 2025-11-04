@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="420" viewBox="0 0 600 420" role="img" aria-label="Product placeholder">
+  <rect width="600" height="420" rx="12" fill="#f6fbf8"/>
+  <rect x="24" y="24" width="252" height="192" rx="10" fill="#e9f7f1"/>
+  <rect x="324" y="48" width="240" height="160" rx="10" fill="#d7efe4"/>
+  <text x="50%" y="360" font-family="Montserrat,Arial,sans-serif" font-size="16" fill="#6b7280" text-anchor="middle">Product image placeholder</text>
+</svg>

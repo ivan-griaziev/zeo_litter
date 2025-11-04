@@ -1,0 +1,248 @@
+/* ZEOLINO custom styles — Montserrat is loaded in the page head */
+:root {
+  --brand: #1e6f5c;
+  --accent: #31B35A;
+  --muted: #6b7280;
+  --bg: #ffffff;
+  --text: #1C1C29;
+  --gold: #F6C738;
+  --hero-img: url('../img/hero-placeholder.jpg');
+}
+
+* {
+  box-sizing: border-box
+}
+
+body {
+  font-family: 'Montserrat', system-ui, -apple-system, Segoe UI, Roboto, 'Helvetica Neue', Arial;
+  line-height: 1.4;
+  color: #111;
+  background: var(--bg)
+}
+
+.site-header {
+  background: transparent
+}
+
+.navbar_top_container {
+  background: #1C1C29;
+  padding: 10px 20px;
+  border-radius: 8px;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.nav-link {
+  color: #fff !important;
+  font-weight: 500;
+}
+
+.brand-name {
+  font-weight: 700;
+  font-size: 1.125rem;
+  color: var(--brand);
+  letter-spacing: 0.04em
+}
+
+.main-nav .nav-link {
+  color: #222;
+  text-decoration: none;
+  font-weight: 500
+}
+
+.main-nav .nav-link:hover {
+  color: var(--brand)
+}
+
+.btn-cta {
+  padding: 1rem 3rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 1.3rem;
+  border-radius: 16px;
+  background-color: var(--accent);
+  color: var(--text);
+}
+
+.btn-cta {
+  transition: background-color 240ms cubic-bezier(.2, .9, .2, 1), color 240ms cubic-bezier(.2, .9, .2, 1), transform 180ms ease, box-shadow 240ms cubic-bezier(.2, .9, .2, 1);
+  will-change: transform, background-color;
+  font-weight: 600;
+  border: 2px solid var(--accent);
+}
+
+.btn-cta-top {
+  padding: 0.8rem 2rem;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  border: 2px solid var(--text);
+}
+
+.btn-lang {
+  background: none;
+  border-color: var(--text);
+  border-radius: 0px;
+  border: 2px solid var(--text);
+}
+
+.btn-lang:hover {
+  background-color: var(--gold);
+  color: var(--text);
+  border: 2px solid var(--gold);
+}
+
+
+.btn-cta:hover {
+  background-color: var(--text);
+  color: #fff;
+  border: 2px solid var(--accent);
+}
+
+/* Respect user preference for reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .btn-cta {
+    transition: none;
+    transform: none;
+    box-shadow: none;
+  }
+}
+
+
+
+.hero {
+  padding: 80px 0;
+  background-image: var(--hero-img);
+  background-size: cover;
+  background-position: center;
+}
+
+
+.hero-title {
+  font-size: 2.5rem;
+  line-height: 1.05;
+  margin-bottom: .6rem;
+  font-weight: 800;
+  color: #0b2b22
+}
+
+.hero-sub {
+  color: var(--text);
+  font-size: 1.125rem;
+  margin-bottom: 1rem;
+  opacity: 0.8;
+  font-weight: 600;
+}
+
+.hero-ctas .btn {
+  min-width: 160px
+}
+
+.hero-features .feature {
+  font-weight: 600;
+  color: var(--muted);
+  background: rgba(0, 0, 0, 0.03);
+  padding: .45rem .75rem;
+  border-radius: 8px
+}
+
+.hero-media {
+  display: flex;
+  justify-content: center
+}
+
+.hero-image {
+  max-width: 520px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(17, 17, 17, 0.08)
+}
+
+/* Responsive tweaks to approach pixel-perfect at common breakpoints */
+@media(min-width:992px) {
+  .hero {
+    padding-top: 20px;
+    padding-bottom: 120px
+  }
+
+  .hero-title {
+    font-size: 3.25rem
+  }
+}
+
+@media(max-width:991.98px) {
+  .main-nav {
+    display: none !important
+  }
+
+  .hero {
+    padding: 60px 0
+  }
+
+  .hero-title {
+    font-size: 1.75rem
+  }
+
+  .hero-image {
+    max-width: 420px
+  }
+}
+
+
+.about_img {
+  width: 100%;
+  border-radius: 250px;
+}
+
+
+/* small utilities */
+.rounded-24 {
+  border-radius: 24px
+}
+
+/* Features */
+.features {
+  background: transparent
+}
+
+.feature-card {
+  background: #fff;
+  border: 1px solid rgba(15, 23, 42, 0.04)
+}
+
+.feature-icon {
+  font-size: 32px
+}
+
+/* Products */
+.product-card img {
+  height: 160px;
+  object-fit: cover
+}
+
+.product-card h3 {
+  margin-bottom: .25rem
+}
+
+/* CTA strip */
+.cta-strip {
+  background: linear-gradient(180deg, #fbfcfb, #f7faf7)
+}
+
+/* Footer */
+.site-footer {
+  background: #f8faf8;
+  border-top: 1px solid rgba(17, 24, 39, 0.04)
+}
+
+.site-footer .fw-bold {
+  color: var(--brand)
+}
+
+@media(max-width:767.98px) {
+  .feature-card {
+    text-align: center
+  }
+
+  .product-card img {
+    height: 140px
+  }
+}
