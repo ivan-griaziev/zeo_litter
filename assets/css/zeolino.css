@@ -107,7 +107,11 @@ body {
   }
 }
 
-
+.btn-gold {
+  background-color: var(--gold);
+  border: 2px solid var(--gold);
+  color: var(--text);
+}
 
 .hero {
   padding: 80px 0;
@@ -172,6 +176,9 @@ body {
 .adw_img_arrow {
   position: absolute;
   bottom: 30px;
+  left: 50%;
+  /* 2. Смещаем элемент обратно на половину его собственной ширины/высоты */
+  transform: translate(-50%, -50%);
 }
 
 
