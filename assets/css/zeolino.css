@@ -275,7 +275,6 @@ body {
 
 /* Testimonials Section */
 .testimonials {
-  background-color: #fff;
   position: relative;
   overflow: hidden;
 }
@@ -290,4 +289,14 @@ body {
 .testimonial-img {
   width: 100%;
   border-radius: 306px;
+}
+
+.why_icon_frame {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 306px;
+  border: 2px dotted #fff;
 }
