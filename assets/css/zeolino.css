@@ -248,20 +248,14 @@ body {
   margin-bottom: .25rem
 }
 
-/* CTA strip */
-.cta-strip {
-  background: linear-gradient(180deg, #fbfcfb, #f7faf7)
-}
-
 /* Footer */
 .site-footer {
-  background: #f8faf8;
-  border-top: 1px solid rgba(17, 24, 39, 0.04)
+  background: #1C1C29;
+  color: #fff;
+  padding-top: 200px;
 }
 
-.site-footer .fw-bold {
-  color: var(--brand)
-}
+
 
 @media(max-width:767.98px) {
   .feature-card {
@@ -291,16 +285,6 @@ body {
   border-radius: 306px;
 }
 
-.why_icon_frame {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 306px;
-  border: 2px dotted #fff;
-}
-
 .swiper {
   width: 100%;
   min-height: 300px;
@@ -320,4 +304,194 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.why_block {
+  background: var(--text);
+  background-image: url(../img/why_img.jpg);
+  background-size: contain;
+}
+
+.why_text {
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding-right: 20px;
+}
+
+.btn-video {
+  transition: background-color 240ms cubic-bezier(.2, .9, .2, 1), color 240ms cubic-bezier(.2, .9, .2, 1), transform 180ms ease, box-shadow 240ms cubic-bezier(.2, .9, .2, 1);
+  will-change: transform, background-color;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 15px 45px;
+  font-size: 1.5rem;
+  border-radius: 16px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  max-width: max-content;
+}
+
+.btn-video:hover {
+  background-color: var(--accent);
+  color: #fff;
+  border: 2px solid var(--accent);
+}
+
+.certificate-img {
+  width: 100%;
+  border-radius: 16px;
+  border: 1px solid #7F7F7F;
+}
+
+.bg-certificates {
+  background: #F5F5F5;
+}
+
+.card_product {
+  border: none;
+}
+
+.card_product_title {
+  font-weight: 700;
+  font-size: 1.7rem;
+}
+
+.card-product-text {
+  font-size: 1rem;
+  color: var(--muted);
+}
+
+.card_product_size {
+  font-size: 2rem;
+  font-weight: 400;
+  opacity: 0.8;
+}
+
+.btn-bordered {
+  background: none;
+  border: 2px solid var(--accent);
+  color: var(--text);
+  padding: 12px 10px;
+  border-radius: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.btn-sell {
+  background-color: var(--accent);
+  border: 2px solid var(--accent);
+  color: #fff;
+  padding: 12px 10px;
+  border-radius: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.btn-bordered:hover {
+  background-color: var(--accent);
+  color: #fff;
+}
+
+.btn-sell:hover {
+  background-color: var(--gold);
+  border: 2px solid var(--gold);
+}
+
+.faq_img {
+  width: 100%;
+  border-radius: 300px;
+}
+
+.cta-strip {
+  margin-bottom: -173px;
+}
+
+.accordion-flush>.accordion-item {
+  background: #F5F5F5;
+}
+
+.cta_block {
+  background: #F5F5F5;
+  z-index: 100;
+}
+
+.footer-link {
+  color: #fff;
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+.accordion-button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 20px 30px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--bs-accordion-btn-color);
+  text-align: left;
+  background-color: var(--bs-accordion-btn-bg);
+  border: 0;
+  border-radius: 16px;
+  overflow-anchor: none;
+  transition: var(--bs-accordion-transition);
+}
+
+
+.accordion-item:first-of-type>.accordion-header .accordion-button {
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+.accordion-item:first-of-type {
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+}
+
+.accordion-button:focus {
+  background-color: var(--text);
+  color: #fff;
+  border-radius: 16px;
+}
+
+.accordion-item:not(:first-of-type) {
+  border-top: 0;
+  margin: 20px 0px;
+  border-radius: 16px;
+}
+
+
+.accordion {
+  --bs-accordion-color: var(--text);
+  --bs-accordion-bg: #F5F5F5;
+  --bs-accordion-border-color: #fff;
+  --bs-accordion-border-width: 0px;
+  --bs-accordion-border-radius: 16px;
+  --bs-accordion-inner-border-radius: 16px;
+  --bs-accordion-btn-padding-x: 1.35rem;
+  --bs-accordion-btn-padding-y: 1rem;
+  --bs-accordion-btn-color: var(--bs-body-color);
+  --bs-accordion-btn-bg: var(--bs-accordion-bg);
+
+  --bs-accordion-btn-icon: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23212529' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='m2 5 6 6 6-6'/%3e%3c/svg%3e);
+
+  --bs-accordion-btn-icon-width: 1.25rem;
+  --bs-accordion-btn-icon-transform: rotate(-180deg);
+  --bs-accordion-btn-icon-transition: transform 0.2s ease-in-out;
+
+
+  --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23fff' stroke-width='1' stroke-linecap='round'%3E%3Cline x1='8' y1='3' x2='8' y2='13'/%3E%3Cline x1='3' y1='8' x2='13' y2='8'/%3E%3C/svg%3E");
+
+  --bs-accordion-body-padding-x: 2.25rem;
+  --bs-accordion-body-padding-y: 1rem;
+  --bs-accordion-active-color: #333;
+  --bs-accordion-active-bg: var(--gold);
 }
