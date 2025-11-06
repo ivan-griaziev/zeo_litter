@@ -175,7 +175,7 @@ body {
 
 .adw_img_arrow {
   position: absolute;
-  bottom: 30px;
+  bottom: 0px;
   left: 50%;
   /* 2. Смещаем элемент обратно на половину его собственной ширины/высоты */
   transform: translate(-50%, -50%);
