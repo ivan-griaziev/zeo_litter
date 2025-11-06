@@ -93,21 +93,22 @@
         <div class="container">
             <div class="row mb-4">
                 <div class="col-lg-4 d-flex flex-column justify-content-center align-items-start">
-                    <p class="text-muted fs-3">90% der Katzenstreu kann unangenehme Gerüche nicht beseitigen</p>
-                    <h2 class="fw-bold fs-1">Zeolino löst dieses Problem</h2>
+                    <p class="text-muted fs-3 fw-bold">90% der Katzenstreu kann unangenehme Gerüche nicht beseitigen</p>
+                    <h2 class="fw-bold fs-1 text-uppercase my-3 ">Zeolino löst dieses Problem</h2>
                     <img src="./assets/img/about_img_box.svg"
                         alt="Product box for Zeolino cat litter, displaying pristine white packaging with minimal design elements against a clean background. Box shows environmentally friendly cat litter made from natural zeolite minerals. Design conveys eco-conscious and premium quality messaging">
                 </div>
 
                 <div class="col-md-4">
-                    <img src="./assets/img/about_bg.jpg" class="about_img p-3" alt="">
+                    <img src="./assets/img/about_bg.jpg" class="about_img p-3"
+                        alt="Fluffy gray cat curiously inspecting a beige litter box filled with white zeolite litter, set against a minimalist home interior with soft natural lighting. The cat appears comfortable and interested, demonstrating natural interaction with the product">
                 </div>
                 <div class="col-md-4 d-flex flex-column justify-content-center">
-                    <div class="d-flex flex-column align-items-start my-3">
+                    <div class="d-flex flex-column align-items-start my-3 fs-3">
                         <img src="./assets/img/about_icon_01.svg" alt="">
                         Schluss mit unangenehmen Gerüchen!
                     </div>
-                    <div class="d-flex flex-column align-items-start my-3">
+                    <div class="d-flex flex-column align-items-start my-3 fs-4">
                         <img src="./assets/img/about_icon_02.svg" alt="">
                         Keine Staubwolken und Krümel mehr!
                     </div>
@@ -595,6 +596,10 @@
         var swiper = new Swiper(".mySwiper", {
             slidesPerView: 2,
             spaceBetween: 40,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
             pagination: {
                 el: ".swiper-pagination",
                 clickable: true,
