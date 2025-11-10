@@ -491,6 +491,68 @@ body {
   --bs-accordion-active-bg: var(--gold);
 }
 
+/* 1. Стили контейнера (родителя) */
+.certificate-wrapper {
+  position: relative;
+  /* Ключевое свойство для позиционирования наложения */
+  display: block;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+/* 2. Стили изображения */
+.certificate-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+  /* Плавное увеличение */
+}
+
+/* 3. Стили зеленого наложения (оверлея) */
+.certificate-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* Зеленый цвет с прозрачностью (85%) */
+  background-color: rgba(49, 179, 90, 1);
+  opacity: 0;
+  display: flex;
+  /* Для центрирования иконки */
+  justify-content: center;
+  border-radius: 16px;
+  align-items: center;
+  transition: opacity 0.3s ease;
+  /* Плавное появление */
+}
+
+/* 4. Стили встроенной SVG-иконки */
+.overlay-svg-icon {
+  width: 60px;
+  height: 60px;
+  stroke: white;
+  fill: none;
+  opacity: 0;
+  transform: scale(0.5);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.certificate-wrapper:hover .certificate-overlay {
+  opacity: 1;
+}
+
+.certificate-wrapper:hover .overlay-svg-icon {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Опционально: Эффект небольшого увеличения изображения */
+.certificate-wrapper:hover .certificate-img {
+  transform: scale(1);
+}
+
 
 /* 1. Начальные (скрытые) стили */
 .animated-element {
@@ -498,18 +560,15 @@ body {
   transition:
     opacity 0.6s ease-out,
     transform 0.6s ease-out;
-  /* Устанавливаем плавный переход */
 }
 
 /* 2. Определяем анимацию "Fade Up" (подъем) */
 .fade-up {
-  /* Сдвигаем элемент вниз на 20px */
   transform: translateY(20px);
 }
 
 /* 3. Определяем анимацию "Fade In" (простое появление) */
 .fade-in {
-  /* Без сдвига */
   transform: translateY(0);
 }
 
