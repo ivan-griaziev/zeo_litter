@@ -24,11 +24,6 @@
 </head>
 
 <body>
-
-
-
-
-
     <!-- Hero -->
     <section class="hero">
 
@@ -36,11 +31,12 @@
         <header class="site-header py-3">
             <div class="container">
                 <div class="d-flex align-items-center justify-content-between navbar_top_container">
-                    <a class="brand d-flex align-items-center text-decoration-none" href="#">
-                        <img src="assets/img/logo.svg" alt="ZEOLINO logo" class="logo me-3" width="161" height="38">
 
+                    <a class="brand d-flex align-items-center text-decoration-none" href="#">
+                        <img src="assets/img/logo.svg" alt="ZEOLINO logo" class="logo me-3" width="130" height="38">
                     </a>
 
+                    <!-- Desktop navigation -->
                     <nav class="main-nav d-none d-lg-flex align-items-center gap-4">
                         <a href="#Produkt" class="nav-link mx-2">Über das Produkt</a>
                         <a href="#FAQ" class="nav-link mx-2">FAQ</a>
@@ -48,19 +44,14 @@
                         <a href="#Kontakt" class="nav-link mx-2">Kontakt</a>
                     </nav>
 
-
-
                     <div class="d-flex align-items-center gap-3">
-                        <div class="btn-group" role="group" aria-label="Basic example">
-                            <button type="button" class="btn btn-primary btn-lang fw-bold">DE</button>
-                            <button type="button" class="btn btn-primary btn-lang">EN</button>
-                            <button type="button" class="btn btn-primary btn-lang">RU</button>
+                        <div class="btn-group" role="group">
+                            <button class="btn btn-primary btn-lang fw-bold">DE</button>
+                            <button class="btn btn-primary btn-lang">EN</button>
+                            <button class="btn btn-primary btn-lang">RU</button>
                         </div>
 
-
-
-
-                        <a href="#get" class="btn-cta btn-cta-top" class="icon-button">
+                        <a href="#get" class="btn-cta btn-cta-top d-none d-xl-block" class="icon-button">
                             <svg class="button-icon" xmlns="http://www.w3.org/2000/svg" width="41" height="40"
                                 fill="none" viewBox="0 0 41 40">
                                 <path stroke="currentColor"
@@ -69,26 +60,48 @@
                             JETZT BESTELLEN
                         </a>
 
-
-                        <button class="btn btn-link d-lg-none hamburger" aria-label="Open menu">☰</button>
+                        <!-- Mobile hamburger button -->
+                        <button class="hamburger-btn d-lg-none" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#mobileOffcanvas" aria-controls="mobileOffcanvas">
+                            <span class="burger-line"></span>
+                            <span class="burger-line"></span>
+                            <span class="burger-line"></span>
+                        </button>
                     </div>
                 </div>
             </div>
         </header>
 
+        <!-- MOBILE OFFCANVAS MENU -->
+        <div class="offcanvas offcanvas-end mobile-menu bg-dark" tabindex="-1" id="mobileOffcanvas">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title text-white"><b>Menü:</b></h5>
+                <button type="button" class="btn-close " data-bs-dismiss="offcanvas"></button>
+            </div>
+
+            <div class="offcanvas-body">
+                <nav class="nav flex-column gap-3">
+                    <a class="nav-link mobile-link" href="#Produkt">Über das Produkt</a>
+                    <a class="nav-link mobile-link" href="#FAQ">FAQ</a>
+                    <a class="nav-link mobile-link" href="#Lieferung">Lieferung</a>
+                    <a class="nav-link mobile-link" href="#Kontakt">Kontakt</a>
+                </nav>
+            </div>
+        </div>
 
 
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-lg-4 m-2">
-                    <h1 class="hero-title pt-5">Natürlich Geruchsfrei Zeolino</h1>
+                <div class="col-md-6 col-xl-4 p-4 text-center text-md-start">
+                    <h1 class="hero-title pt-0 pt-md-5">Natürlich Geruchsfrei Zeolino</h1>
                     <p class="hero-sub py-2">100% Natürlich, 0% unangenehmer Geruch, umweltfreundlich
                         und super saugfähig.</p>
                     <div class="hero-ctas mt-4 d-grid text-center">
                         <a href="#" class="btn-cta animated-element fade-up delay-1">Jetzt bestellen</a>
                     </div>
-                    <div class="d-flex my-4 justify-content-between pt-4">
-                        <img src="./assets/img/adw_logo_01.svg" class="img-fluid" alt="">
+                    <div class="adw_logos_top">
+                        <img src="./assets/img/adw_logo_01.svg" class="img-fluid"
+                            alt="ADW logo featuring stylized gray geometric letterforms and abstract shapes in a minimalist design against a white background, representing a partner or certification mark for the ZEOLINO brand">
                         <img src="./assets/img/adw_logo_02.svg" class="img-fluid" alt="">
                     </div>
 
@@ -99,38 +112,42 @@
     </section>
 
     <!-- Features -->
-    <section id="features" class="features py-5 my-5">
+    <section id="features" class="features pt-5 pb-5 py-xl-0 ">
         <div class="container">
             <div class="row mb-4">
                 <div class="col-lg-4 d-flex flex-column justify-content-center align-items-start">
-                    <p class="text-muted fs-3">90% der Katzenstreu kann unangenehme Gerüche nicht beseitigen</p>
-                    <h2 class="fw-bold fs-1 text-uppercase my-5 ">Zeolino löst dieses Problem</h2>
+                    <p class="text-muted fs-6 fs-md-3 text-center text-md-start">90% der Katzenstreu kann unangenehme
+                        Gerüche nicht beseitigen</p>
+                    <h2 class="fw-bold fs-2 text-uppercase my-md-5 text-center text-md-start">Zeolino löst dieses
+                        Problem</h2>
                     <img src="./assets/img/about_img_box.svg"
-                        alt="Product box for Zeolino cat litter, displaying pristine white packaging with minimal design elements against a clean background. Box shows environmentally friendly cat litter made from natural zeolite minerals. Design conveys eco-conscious and premium quality messaging">
+                        alt="Product box for Zeolino cat litter, displaying pristine white packaging with minimal design elements against a clean background. Box shows environmentally friendly cat litter made from natural zeolite minerals. Design conveys eco-conscious and premium quality messaging"
+                        class="d-none d-md-block">
                 </div>
 
-                <div class="col-md-4">
-                    <img src="./assets/img/about_bg.jpg" class="about_img p-3  animated-element fade-up delay-1"
+                <div class="col-md-4 px-1 p-xl-5">
+                    <img src="./assets/img/about_bg.jpg" class="about_img  p-md-3 animated-element fade-up delay-1"
                         alt="Fluffy gray cat curiously inspecting a beige litter box filled with white zeolite litter, set against a minimalist home interior with soft natural lighting. The cat appears comfortable and interested, demonstrating natural interaction with the product">
                 </div>
-                <div class="col-md-4 d-flex flex-column justify-content-center">
-                    <div class="d-flex flex-column align-items-start my-3 fs-4">
+
+                <div class="col-md-4 d-flex flex-column justify-content-center text-center text-md-start">
+                    <div class="d-flex flex-column align-items-center align-items-md-start my-3 fs-6 fs-xl-4 ">
                         <img src="./assets/img/about_icon_01.svg" alt="">
                         Schluss mit unangenehmen Gerüchen!
                     </div>
-                    <div class="d-flex flex-column align-items-start my-3 fs-4">
+                    <div class="d-flex flex-column align-items-center align-items-md-start my-3 fs-6 fs-xl-4 ">
                         <img src="./assets/img/about_icon_02.svg" alt="">
                         Keine Staubwolken und Krümel mehr!
                     </div>
-                    <div class="d-flex flex-column align-items-start my-3 fs-4">
+                    <div class="d-flex flex-column align-items-center align-items-md-start my-3 fs-6 fs-xl-4 ">
                         <img src="./assets/img/about_icon_03.svg" alt="">
                         Hält bis zu 2 Wochen!
                     </div>
-                    <div class="d-flex flex-column align-items-start my-3 fs-4">
+                    <div class="d-flex flex-column align-items-center align-items-md-start my-3 fs-6 fs-xl-4 ">
                         <img src="./assets/img/about_icon_01.svg" alt="">
                         Als Dünger verwenden! Keine Abfälle!
                     </div>
-                    <div class="d-flex flex-column align-items-start my-3   fs-4">
+                    <div class="d-flex flex-column align-items-center align-items-md-start my-3 fs-6 fs-xl-4 ">
                         <img src="./assets/img/about_icon_01.svg" alt="">
                         100% frei von Chemikalien!
                     </div>
@@ -141,12 +158,15 @@
     </section>
 
     <!-- Features -->
-    <section id="adwantages" class="py-5">
-        <div class="container bg-light p-5 rounded-5">
-            <div class="row mb-4 p-5">
-                <div class="col-md-6 d-flex flex-column justify-content-center align-items-start text-start px-5">
-                    <h2 class="text-uppercase fw-bold">Nicht nur für Katzen – Zeolith als natürliches Dünger!</h2>
-                    <p class="py-3 fs-5">Unsere Katzenstreu aus Zeolith kann auch im Garten verwendet werden – für
+    <section id="adwantages" class="p-0 py-md-5 px-md-2">
+        <div class="container bg-light p-3 rounded-5">
+            <div class="row mb-4 p-xl-5 py-4 py-md-0">
+                <div
+                    class="col-md-6 d-flex flex-column justify-content-center align-items-start text-center text-md-start px-3 px-md-5">
+                    <h2 class="header_fertil pt-4">Nicht nur für Katzen – Zeolith als
+                        natürliches Dünger!</h2>
+                    <p class="py-3 fs-5">Unsere Katzenstreu aus Zeolith kann auch im Garten verwendet werden –
+                        für
                         Pflanzen,
                         Obststräucher und Gemüse. Ein natürlicher Dünger, der Nährstoffe speichert und den Boden
                         verbessert. Werfen
@@ -154,7 +174,7 @@
                     </p>
                     <a href="#" class="btn-cta btn-gold animated-element fade-up delay-1">Mehr erfahren</a>
                 </div>
-                <div class="col-md-6 adw_img_block">
+                <div class="col-md-6 adw_img_block p-2 p-xl-5">
                     <img src="./assets/img/adw_01.jpg" class="adw_img mt-5"
                         alt="Small potted plant with delicate green leaves emerging from rich soil, sitting on a minimalist white surface, suggesting growth and natural beauty">
                     <img src="./assets/img/adw_02.jpg" class="adw_img mb-5"
@@ -170,11 +190,11 @@
 
     <section id="testimonials" class="testimonials pb-5">
         <div class="container">
-            <div class="row d-flex align-items-center">
+            <div class="row d-flex align-items-center text-center text-md-start">
                 <div class="col-lg-8">
-                    <h2 class="fw-bold mb-5">Über 11 Millionen Katzenbesitzer<br /> weltweit verwenden<br /> Katzenstreu
-                        aus
-                        Zeolith
+                    <h2 class="fw-bold mb-5 fs-4 fs-md-2 mt-5 mt-md-0">Über 11 Millionen Katzenbesitzer<br /> weltweit
+                        verwenden<br /> Katzenstreu
+                        aus Zeolith
                     </h2>
 
                     <!-- Swiper -->
@@ -239,7 +259,7 @@
 
 
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4 px-5 px-md-0 pt-5 pt-md-0">
                     <img src="./assets/img/testimonials_img.jpg"
                         class="testimonial-img animated-element zoom-in delay-5"
                         alt="A man and a black-and-white cat touch noses as the man gently cradles the cat and the cat raises a paw to his face, indoor living space with a soft rug and wooden chair legs visible in warm natural light, no visible text, warm affectionate and tender mood">
@@ -255,35 +275,39 @@
                     <h2 class="text-uppercase fw-bold pt-3">Wie es funktioniert</h2>
                 </div>
 
-                <div class="col-md-3">
+                <div class="col-md-3 text-center text-md-start">
                     <div class="why_icon_frame">
-                        <img src="./assets/img/icons/why_icon_03.svg" class="img-fluid" alt="">
+                        <img src="./assets/img/icons/why_icon_03.svg" class="img-fluid d-none d-md-block" alt="">
+                        <img src="./assets/img/icons/why_icon_01_mob.svg" class="img-fluid d-block d-md-none" alt="">
                     </div>
-                    <p class="why_text text-white mt-5">Füllen Sie die<br /> Schale 5-6 cm tief.</p>
+                    <p class="why_text text-white mt-1 mt-md-5">Füllen Sie die<br /> Schale 5-6 cm tief.</p>
                 </div>
 
 
-                <div class="col-md-3">
+                <div class="col-md-3 text-center text-md-start">
                     <div class="why_icon_frame">
-                        <img src="./assets/img/icons/why_icon_05.svg" class="img-fluid" alt="">
+                        <img src="./assets/img/icons/why_icon_05.svg" class="img-fluid d-none d-md-block" alt="">
+                        <img src="./assets/img/icons/why_icon_02_mob.svg" class="img-fluid d-block d-md-none" alt="">
                     </div>
-                    <p class="why_text text-white mt-5">Genießen Sie Sauberkeit und Frische.</p>
+                    <p class="why_text text-white mt-1 mt-md-5">Genießen Sie Sauberkeit und Frische.</p>
                 </div>
 
 
-                <div class="col-md-3">
+                <div class="col-md-3 text-center text-md-start">
                     <div class="why_icon_frame">
-                        <img src="./assets/img/icons/why_icon_04.svg" class="img-fluid" alt="">
+                        <img src="./assets/img/icons/why_icon_04.svg" class="img-fluid d-none d-md-block" alt="">
+                        <img src="./assets/img/icons/why_icon_03_mob.svg" class="img-fluid d-block d-md-none" alt="">
                     </div>
-                    <p class="why_text text-white mt-5">Innerhalb von 1-2 Wochen austauschen.</p>
+                    <p class="why_text text-white mt-1 mt-md-5">Innerhalb von 1-2 Wochen austauschen.</p>
                 </div>
 
 
-                <div class="col-md-3">
+                <div class="col-md-3 text-center text-md-start">
                     <div class="why_icon_frame">
-                        <img src="./assets/img/icons/why_icon_01.svg" class="img-fluid" alt="">
+                        <img src="./assets/img/icons/why_icon_01.svg" class="img-fluid d-none d-md-block" alt="">
+                        <img src="./assets/img/icons/why_icon_04_mob.svg" class="img-fluid d-block d-md-none" alt="">
                     </div>
-                    <p class="why_text text-white mt-5">Verwenden Sie verbrauchtes Zeolith als Dünger.</p>
+                    <p class="why_text text-white mt-1 mt-md-5">Verwenden Sie verbrauchtes Zeolith als Dünger.</p>
                 </div>
 
 
@@ -305,7 +329,7 @@
     <section class="bg-certificates py-3">
         <div class="container py-5 ">
             <div class="row">
-                <div class="col-md-3">
+                <div class="col-6 pb-3 col-md-3">
                     <a href="./assets/img/Certitficate_01.jpg" target="_blank" class="certificate-wrapper">
                         <img src="./assets/img/Certitficate_02.jpg" class="certificate-img" alt="Сертификат">
 
@@ -321,7 +345,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-md-3">
+                <div class="col-6 pb-3 col-md-3">
                     <a href="./assets/img/Certitficate_02.jpg" target="_blank" class="certificate-wrapper">
                         <img src="./assets/img/Certitficate_01.jpg" class="certificate-img" alt="Сертификат">
 
@@ -337,7 +361,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-md-3">
+                <div class="col-6 pb-3 col-md-3">
                     <a href="./assets/img/Certitficate_01.jpg" target="_blank" class="certificate-wrapper">
                         <img src="./assets/img/Certitficate_02.jpg" class="certificate-img" alt="Сертификат">
 
@@ -353,7 +377,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-md-3">
+                <div class="col-6 pb-3 col-md-3">
                     <a href="./assets/img/Certitficate_02.jpg" target="_blank" class="certificate-wrapper">
                         <img src="./assets/img/Certitficate_01.jpg" class="certificate-img" alt="Сертификат">
 
@@ -372,24 +396,17 @@
             </div>
 
 
-            <div class="d-flex justify-content-between py-4 align-items-center">
-                <img src="./assets/img/certif_logos_02.png" alt="logo OKOtest">
-                <img src="./assets/img/certif_logos_03.png" alt="logo Made in Germany">
-                <img src="./assets/img/certif_logos_01.png" alt="Logo bio">
-                <img src="./assets/img/certif_logos_04.png" alt="logo Gogreen">
-                <img src="./assets/img/certif_logos_05.png"
+            <div class="bio_logos pt-3">
+                <img src="./assets/img/certif_logos_04.png" class="img-fluid" alt="logo Gogreen">
+                <img src="./assets/img/certif_logos_03.png" class="img-fluid" alt="logo Made in Germany">
+                <img src="./assets/img/certif_logos_01.png" class="img-fluid" alt="Logo bio">
+
+                <img src="./assets/img/certif_logos_02.png" class="img-fluid" alt="logo OKOtest">
+                <img src="./assets/img/certif_logos_05.png" class="img-fluid"
                     alt="logo von Tierärzten empfohlen - Professional veterinarian recommended certification symbol">
             </div>
         </div>
     </section>
-
-
-
-
-
-
-
-
 
 
 
@@ -471,7 +488,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6 d-flex flex-column justify-content-center ">
-                    <h2 class="text-uppercase fw-bold mb-5">Häufig gestellte Fragen</h2>
+                    <h2 class="text-uppercase text-center text-md-start fw-bold mb-5">Häufig gestellte Fragen</h2>
                     <div class="accordion" id="accordionFlushExample">
                         <div class="accordion-item">
                             <h2 class="accordion-header">
@@ -621,10 +638,10 @@
                         </div>
 
                         <div class="col-md-12 mt-5 d-flex justify-content-between">
-                            <img src="./assets/img/payment_logo_04.svg" alt="">
-                            <img src="./assets/img/payment_logo_03.svg" alt="">
-                            <img src="./assets/img/payment_logo_02.svg" alt="">
-                            <img src="./assets/img/payment_logo_01.svg" alt="">
+                            <img src="./assets/img/payment_logo_04.svg" class="img_payment" alt="">
+                            <img src="./assets/img/payment_logo_03.svg" class="img_payment" alt="">
+                            <img src="./assets/img/payment_logo_02.svg" class="img_payment" alt="">
+                            <img src="./assets/img/payment_logo_01.svg" class="img_payment" alt="">
                         </div>
 
                     </div>
@@ -733,6 +750,33 @@
             videoFrame.src = "";
         });
     </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+
+            const hamburger = document.querySelector(".hamburger-btn");
+            const offcanvas = document.getElementById("mobileOffcanvas");
+            const bsOffcanvas = new bootstrap.Offcanvas(offcanvas);
+
+            /* Toggle hamburger animation */
+            offcanvas.addEventListener("show.bs.offcanvas", () => {
+                hamburger.classList.add("active");
+            });
+
+            offcanvas.addEventListener("hidden.bs.offcanvas", () => {
+                hamburger.classList.remove("active");
+            });
+
+            /* Auto-close on link click */
+            document.querySelectorAll(".mobile-link").forEach(link => {
+                link.addEventListener("click", () => {
+                    bsOffcanvas.hide();
+                });
+            });
+
+        });
+    </script>
+
 
 
 </body>

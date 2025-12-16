@@ -864,3 +864,13 @@
         transform-origin: center bottom
     }
 }
+
+
+@media (max-width: 768px) {
+    .swiper-pagination {
+        left: 50%;
+        transform: translateX(-50%);
+        right: auto;
+        text-align: center;
+    }
+}
